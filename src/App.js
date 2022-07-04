@@ -56,6 +56,7 @@ class App extends React.Component {
         <h1>Mon argent: {this.state.argent}€</h1>
         <Articles data={this.state.lesArticles} acheter={this.acheter} />
         <h2>Mon panier:</h2>
+        
       </div>
     );
   }

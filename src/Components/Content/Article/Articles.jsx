@@ -4,7 +4,6 @@ import "./article.css"
 
 class Articles extends React.Component {
     render() {
-        console.log(this.props);
         return (
 
             <div className="parent">
