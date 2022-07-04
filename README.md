@@ -1,71 +1,21 @@
-# Getting Started with Create React App
+Consignes : 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Réaliser un eShop en React. L'exercice consiste à faire des achats de plusieurs articles. (voir vidéo en annexe)   
 
-## Available Scripts
+ Dans le fichier App.js, créer un State avec votre argent (20) , un panier (un array vide) et 3 articles (un tableau avec 3  objets. Chaque objet comporte un nom, un prix, le stock disponible et le lien d'une image pour le visuel de l'article).
 
-In the project directory, you can run:
+Créer deux composants du nom de "Panier.js" qui affichera tous les articles achetés et "Articles.js" qui affichera tout les articles disponibles. (Utilisation des props, méthodes array.map)
 
-### `npm start`
+Fonctionnalité : 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Sur les 3 articles vous avez un button "acheter" qui contient une fonction. Elle permet d'ajouter l'article dans votre panier, mais en conséquence votre argent diminue (soustraire le prix de l'article à votre argent). Pareil pour le stock de l'article, à chaque ajout dans le panier, le stock de l'article diminue. La fonction doit être créer dans le composant App.js et doit être  passer dans le composant Article.js (props, setState)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Les articles achetés s'affichent dans votre panier. (dans composant Panier.js). Créer une fonction qui permet de rendre un article au magasin si vous le souhaitez.  (props)
 
-### `npm test`
+Si vous n'avez plus d'argent, les buttons "acheter" disparaissent. (affichage conditionnel)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Si le stock de l'article est égale à 1, le fond de la card devient orange. Si le stock est égal  à 0, le fond de la card devient rouge et le buton "acheter" disparait (affichage conditionnel)
 
-### `npm run build`
+Récap de l'exercice : 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# e-shop_react
+Nettoyer votre structure ReactJs au maximum Sur votre fichier App.js, créer le state  et les fonctions Créer deux composants en plus : "Panier.js" et Article.js" et afficher les données qui en sont demandées 
