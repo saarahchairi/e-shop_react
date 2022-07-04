@@ -1,12 +1,9 @@
-import React from "react";
+import React from 'react'
 
-class Panier extends React.Component{
-    render(){
-        return(
-            <div>
-            </div>
-        );
-    }
+export default function Panier() {
+    return (
+        <div>
+            
+        </div>
+    )
 }
-
-export default Panier
