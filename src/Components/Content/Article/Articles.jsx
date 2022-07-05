@@ -5,7 +5,6 @@ import "./article.css"
 class Articles extends React.Component {
     render() {
         return (
-
             <div className="parent">
                 {this.props.data.map((produit) => {
                     return (
@@ -18,6 +17,7 @@ class Articles extends React.Component {
                                 <p>Prix: {produit.prix}€</p>
                                 <p>Stock: {produit.stock} unités</p>        
                                 {produit.stock >0 && <button onClick={() => this.props.acheter(produit)}>Acheter</button>}
+                                {produit.stock <=0 && <p>Rupture de stock</p>}
                             </div>
                         </div>
                     )
