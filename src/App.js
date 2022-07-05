@@ -27,9 +27,8 @@ class App extends React.Component {
           argent: this.state.argent,
           monPanier: this.state.monPanier
         })
-        console.log(this.state.monPanier);
       } else {
-        console.log("Plus d'argent");
+        alert("Plus d'argent");
       }
     } else {
       // this.changeStock(produit);
@@ -64,7 +63,6 @@ class App extends React.Component {
       argent: this.state.argent,
       monPanier: this.state.monPanier
     })
-    console.log(this.state.monPanier);
   }
   render() {
     return (
