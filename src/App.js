@@ -30,28 +30,14 @@ class App extends React.Component {
       } else {
         alert("Plus d'argent");
       }
-    } else {
-      // this.changeStock(produit);
     }
   }
   changeStock = (produit) => {
     switch (produit.stock) {
-      case 2:
-        //bgc orange
-        this.state.argent -= produit.prix;
-        produit.stock -= 1;
-        this.setState({
-          argent: this.state.argent
-        })
-        break;
       case 1:
-        //bgc rouge
-        this.state.argent -= produit.prix;
-        produit.stock -= 1;
-        this.setState({
-          argent: this.state.argent
-        })
-        break;
+        return "orange";
+      case 0:
+        return "red";
     }
   }
   rendre = (produit) => {
@@ -68,7 +54,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>Mon argent: {this.state.argent}€</h1>
-        <Articles data={this.state.lesArticles} acheter={this.acheter} />
+        <Articles data={this.state.lesArticles} acheter={this.acheter} change={this.changeStock} />
         <h2>Mon panier:</h2>
         <Panier data={this.state.lesArticles} rendre={this.rendre} />
       </div>

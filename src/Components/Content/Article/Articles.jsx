@@ -8,7 +8,7 @@ class Articles extends React.Component {
             <div className="parent">
                 {this.props.data.map((produit) => {
                     return (
-                        <div className="card" key={produit.nom}>
+                        <div className="card" key={produit.nom} style={{backgroundColor: this.props.change(produit)} }>
                             <div className="image">
                                 <img src={produit.image} alt="" />
                             </div>
